@@ -19,5 +19,5 @@ phases:
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - aws s3 cp . s3://mitja-react --recursive
+      - aws s3 cp build/ s3://mitja-react --recursive
       - echo Build completed on `date`
